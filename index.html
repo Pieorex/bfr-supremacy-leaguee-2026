@@ -470,6 +470,283 @@ img {
         <div class="controls">
           <input class="control" id="fixtureSearch" placeholder="Search team..." aria-label="Search team">
           <select class="control" id="groupFilter"><option value="all">All groups</option><option>A</option><option>B</option><option>C</option></select>
+          <select class="control" id="statusFilter"><option value.qf-rule-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
+.qf-rule-grid > div { display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; padding:10px 12px; border:1px solid var(--border); border-radius:10px; font-size:13px; }
+.qf-rule-grid strong { color:var(--site-primary); }
+.playoff-rules-footer { border-top:1px solid var(--border); padding-top:12px; text-align:center; font-weight:800; font-size:14px; }
+@media(max-width:520px) { .playoff-rules { padding:14px 12px; } .qf-rule-grid { grid-template-columns:1fr; } .playoff-rules-heading { font-size:14px; } }
+
+.playoff-info { background:var(--surface-soft); border:1px solid var(--border); padding:14px 16px; border-radius:13px; margin:0 0 15px; line-height:1.6; font-size:13px; }
+.playoff-info strong { color:var(--site-primary); }
+/* Championship-stage decorations */
+.playoff-hero { position:relative; overflow:hidden; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:18px 20px; margin:0 0 18px; border-radius:16px; color:#fff; background:linear-gradient(120deg,#101d35 0%,#183d67 58%,#8a5a13 100%); border:1px solid #d7a43b; box-shadow:0 10px 28px #101d3526; }
+.playoff-hero:after { content:"🏆"; font-size:68px; opacity:.18; position:absolute; right:18px; top:50%; transform:translateY(-50%) rotate(12deg); }
+.playoff-hero-copy { position:relative; z-index:1; }
+.playoff-hero-kicker { color:#f5cf75; font-size:10px; font-weight:900; letter-spacing:2px; text-transform:uppercase; }
+.playoff-hero h3 { margin:4px 0; font-size:20px; letter-spacing:.5px; }
+.playoff-hero p { margin:0; color:#e5edf8; font-size:12px; }
+.stage-block { margin:18px 0 0; padding:16px; border:1px solid var(--border); border-radius:16px; background:var(--surface); box-shadow:0 5px 18px #14243a0a; }
+.stage-heading { display:flex; align-items:center; gap:9px; margin:0 0 12px; font-size:16px; font-weight:900; }
+.stage-heading .stage-icon { width:34px; height:34px; display:grid; place-items:center; border-radius:11px; background:var(--surface-soft); font-size:18px; }
+.stage-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.stage-match { min-width:0; padding:13px; border:1px solid var(--border); border-radius:12px; background:var(--surface-soft); }
+.stage-match-title { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px; font-size:11px; font-weight:900; letter-spacing:.8px; text-transform:uppercase; }
+.stage-chip { padding:4px 8px; border-radius:99px; color:#80520c; background:#f7e7bd; font-size:9px; font-weight:900; }
+.stage-team { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:9px 10px; border-radius:8px; background:var(--surface); border:1px solid var(--border); font-size:12px; font-weight:750; overflow-wrap:anywhere; }
+.stage-team + .stage-team { margin-top:6px; }
+.stage-team.winner { border-color:#d6a43e; background:#fff7e3; color:#593d0b; }
+.stage-vs { text-align:center; margin:4px 0; color:var(--text-muted); font-size:9px; font-weight:900; letter-spacing:1px; }
+.final-stage { border:1px solid #d6a43e; background:linear-gradient(145deg,var(--surface),#fff8e8); }
+.champion-banner { margin-top:13px; padding:16px; border-radius:13px; text-align:center; color:#fff; background:linear-gradient(110deg,#172b49,#8a5a13); border:1px solid #e0b64f; }
+.champion-banner .champion-crown { font-size:28px; }
+.champion-banner strong { display:block; margin-top:4px; font-size:17px; letter-spacing:.8px; }
+.champion-banner span { font-size:11px; color:#f6dfaa; }
+@media(max-width:520px){ .stage-grid{grid-template-columns:1fr;} .playoff-hero{padding:15px;} .playoff-hero h3{font-size:17px;} .playoff-hero:after{font-size:54px;right:8px;} }
+.playoff-section-title { margin:24px 0 12px; font-size:17px; }
+.seed-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.seed-item { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:13px 14px; background:var(--surface); border:1px solid var(--border); border-radius:12px; font-size:13px; }
+.seed-item strong { color:var(--site-primary); }
+.eliminated { border-color:var(--danger); }
+.eliminated strong { color:var(--danger); }
+@media(max-width:900px){ .playoff-grid { grid-template-columns:1fr; } }
+@media(max-width:520px){ .seed-list { grid-template-columns:1fr; } }
+
+@media (max-width:760px) {
+  .stats { grid-template-columns:repeat(2,1fr); }
+  .group-grid, .points-grid { grid-template-columns:1fr; }
+  main { padding:18px 13px 45px; }
+  .topbar { padding:19px 15px; }
+  h1 { font-size:23px; }
+  .form-grid { grid-template-columns:1fr; }
+  .form-item.full { grid-column:auto; }
+}
+
+
+/* ---------- Mobile and responsive image fixes ---------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.brand,
+.brandline {
+  min-width: 0;
+}
+
+.brand > div:first-child {
+  flex: 0 0 180px;
+  min-width: 0;
+}
+
+.brand > div:first-child img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 120px;
+  object-fit: contain;
+}
+
+.group-card,
+.points-card,
+.stat,
+.table-wrap {
+  min-width: 0;
+}
+
+.table-wrap {
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 760px) {
+  .brandline {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .brand > div:first-child {
+    flex: 0 0 105px !important;
+    width: 105px !important;
+    max-width: 105px !important;
+    height: 78px !important;
+    margin: 0 !important;
+  }
+
+  .brand > div:first-child img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain;
+  }
+
+  .brand > div:last-child {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  h1 {
+    overflow-wrap: anywhere;
+    font-size: clamp(18px, 5vw, 23px);
+  }
+
+  .top-actions {
+    width: 100%;
+  }
+
+  .top-actions button {
+    flex: 1 1 auto;
+  }
+
+  .hero-strip {
+    gap: 7px;
+  }
+
+  .pill {
+    font-size: 11px;
+  }
+
+  .controls {
+    width: 100%;
+  }
+
+  .controls .control {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .team-select-card select {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .points-card .table-wrap {
+    overflow-x: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .brand > div:first-child {
+    flex-basis: 82px !important;
+    width: 82px !important;
+    max-width: 82px !important;
+    height: 68px !important;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 1px;
+  }
+
+  h1 {
+    font-size: 18px;
+    letter-spacing: -0.4px;
+  }
+
+  .stats {
+    gap: 8px;
+  }
+
+  .stat {
+    padding: 12px;
+  }
+
+  .stat-value {
+    font-size: 23px;
+  }
+
+  .tab {
+    padding: 11px 12px;
+    font-size: 12px;
+  }
+
+  .group-title {
+    gap: 8px;
+    padding: 12px;
+  }
+
+  .group-title span {
+    text-align: right;
+  }
+
+  .team-row {
+    padding: 11px;
+  }
+
+  .modal {
+    padding: 16px;
+  }
+
+  footer {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+    overflow-wrap: anywhere;
+  }
+}
+
+</style>
+</head>
+<body>
+<div id="app">
+  <header class="topbar">
+    <div class="brandline">
+      <div class="brand">
+        <div style="width:100%; max-width:180px; height:120px; display:flex; align-items:center; justify-content:center; margin:0 auto;">
+          <img 
+        src="Images/logo.jpg"
+        alt="UNO Tournament Logo"
+        style="width:100%; height:100%; max-width:100%; object-fit:contain; display:block;"
+            >
+        </div>
+        <div><div class="eyebrow">Tournament match center · 2026</div><h1>BFR SUPERMACY LEAGUE</h1></div>
+      </div>
+      <div class="top-actions">
+        <button id="exportBtn">Export CSV ↓</button>
+      </div>
+    </div>
+    <div class="hero-strip">
+      <span class="pill">📅 <b>01–08 NOV</b> 2026</span>
+      <span class="pill">👥 <b>18</b> TEAMS</span>
+      <span class="pill">🏁 <b>3</b> GROUPS</span>
+      <span class="pill">🕖 <b>7 / 8 / 9 PM</b> IST</span>
+    </div>
+  </header>
+  <main>
+    <section class="stats">
+      <div class="stat"><div class="stat-label">Total teams</div><div class="stat-value" id="statTeams">18</div><div class="stat-note">Across three groups</div></div>
+      <div class="stat"><div class="stat-label">Group matches</div><div class="stat-value" id="statMatches">45</div><div class="stat-note">15 matches per group</div></div>
+      <div class="stat"><div class="stat-label">Completed</div><div class="stat-value" id="statDone">0</div><div class="stat-note">Results are updated in the website code</div></div>
+      <div class="stat"><div class="stat-label">Upcoming</div><div class="stat-value" id="statUpcoming">45</div><div class="stat-note">PDF schedule fixtures</div></div>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="overview">Overview</button>
+      <button class="tab" data-tab="fixtures">All fixtures</button>
+      <button class="tab" data-tab="teams">Individual team schedule</button>
+      <button class="tab" data-tab="points">Points tables</button>
+      <button class="tab" data-tab="playoffs">🏆 Playoffs</button>
+    </nav>
+
+    <section class="panel active" id="overview">
+      <div class="section-head"><div><h2>Team groups</h2><p>Six teams in each group. Select a team to see its individual fixtures.</p></div></div>
+      <div class="group-grid" id="groupGrid"></div>
+      <div class="footer-note">Match dates and times are shown in India Standard Time (IST).</div>
+    </section>
+
+    <section class="panel" id="fixtures">
+      <div class="section-head"><div><h2>Complete match fixtures</h2><p>View and filter all scheduled matches.</p></div>
+        <div class="controls">
+          <input class="control" id="fixtureSearch" placeholder="Search team..." aria-label="Search team">
+          <select class="control" id="groupFilter"><option value="all">All groups</option><option>A</option><option>B</option><option>C</option></select>
           <select class="control" id="statusFilter"><option value="all">All statuses</option><option>Upcoming</option><option>Live</option><option>Completed</option></select>
         </div>
       </div>
