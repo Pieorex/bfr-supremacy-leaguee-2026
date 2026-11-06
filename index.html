@@ -470,284 +470,12 @@ img {
         <div class="controls">
           <input class="control" id="fixtureSearch" placeholder="Search team..." aria-label="Search team">
           <select class="control" id="groupFilter"><option value="all">All groups</option><option>A</option><option>B</option><option>C</option></select>
-          <select class="control" id="statusFilter"><option value.qf-rule-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
-.qf-rule-grid > div { display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px; padding:10px 12px; border:1px solid var(--border); border-radius:10px; font-size:13px; }
-.qf-rule-grid strong { color:var(--site-primary); }
-.playoff-rules-footer { border-top:1px solid var(--border); padding-top:12px; text-align:center; font-weight:800; font-size:14px; }
-@media(max-width:520px) { .playoff-rules { padding:14px 12px; } .qf-rule-grid { grid-template-columns:1fr; } .playoff-rules-heading { font-size:14px; } }
-
-.playoff-info { background:var(--surface-soft); border:1px solid var(--border); padding:14px 16px; border-radius:13px; margin:0 0 15px; line-height:1.6; font-size:13px; }
-.playoff-info strong { color:var(--site-primary); }
-/* Championship-stage decorations */
-.playoff-hero { position:relative; overflow:hidden; display:flex; align-items:center; justify-content:space-between; gap:14px; padding:18px 20px; margin:0 0 18px; border-radius:16px; color:#fff; background:linear-gradient(120deg,#101d35 0%,#183d67 58%,#8a5a13 100%); border:1px solid #d7a43b; box-shadow:0 10px 28px #101d3526; }
-.playoff-hero:after { content:"🏆"; font-size:68px; opacity:.18; position:absolute; right:18px; top:50%; transform:translateY(-50%) rotate(12deg); }
-.playoff-hero-copy { position:relative; z-index:1; }
-.playoff-hero-kicker { color:#f5cf75; font-size:10px; font-weight:900; letter-spacing:2px; text-transform:uppercase; }
-.playoff-hero h3 { margin:4px 0; font-size:20px; letter-spacing:.5px; }
-.playoff-hero p { margin:0; color:#e5edf8; font-size:12px; }
-.stage-block { margin:18px 0 0; padding:16px; border:1px solid var(--border); border-radius:16px; background:var(--surface); box-shadow:0 5px 18px #14243a0a; }
-.stage-heading { display:flex; align-items:center; gap:9px; margin:0 0 12px; font-size:16px; font-weight:900; }
-.stage-heading .stage-icon { width:34px; height:34px; display:grid; place-items:center; border-radius:11px; background:var(--surface-soft); font-size:18px; }
-.stage-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
-.stage-match { min-width:0; padding:13px; border:1px solid var(--border); border-radius:12px; background:var(--surface-soft); }
-.stage-match-title { display:flex; justify-content:space-between; align-items:center; gap:8px; margin-bottom:10px; font-size:11px; font-weight:900; letter-spacing:.8px; text-transform:uppercase; }
-.stage-chip { padding:4px 8px; border-radius:99px; color:#80520c; background:#f7e7bd; font-size:9px; font-weight:900; }
-.stage-team { display:flex; align-items:center; justify-content:space-between; gap:8px; padding:9px 10px; border-radius:8px; background:var(--surface); border:1px solid var(--border); font-size:12px; font-weight:750; overflow-wrap:anywhere; }
-.stage-team + .stage-team { margin-top:6px; }
-.stage-team.winner { border-color:#d6a43e; background:#fff7e3; color:#593d0b; }
-.stage-vs { text-align:center; margin:4px 0; color:var(--text-muted); font-size:9px; font-weight:900; letter-spacing:1px; }
-.final-stage { border:1px solid #d6a43e; background:linear-gradient(145deg,var(--surface),#fff8e8); }
-.champion-banner { margin-top:13px; padding:16px; border-radius:13px; text-align:center; color:#fff; background:linear-gradient(110deg,#172b49,#8a5a13); border:1px solid #e0b64f; }
-.champion-banner .champion-crown { font-size:28px; }
-.champion-banner strong { display:block; margin-top:4px; font-size:17px; letter-spacing:.8px; }
-.champion-banner span { font-size:11px; color:#f6dfaa; }
-@media(max-width:520px){ .stage-grid{grid-template-columns:1fr;} .playoff-hero{padding:15px;} .playoff-hero h3{font-size:17px;} .playoff-hero:after{font-size:54px;right:8px;} }
-.playoff-section-title { margin:24px 0 12px; font-size:17px; }
-.seed-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
-.seed-item { display:flex; align-items:center; justify-content:space-between; gap:10px; padding:13px 14px; background:var(--surface); border:1px solid var(--border); border-radius:12px; font-size:13px; }
-.seed-item strong { color:var(--site-primary); }
-.eliminated { border-color:var(--danger); }
-.eliminated strong { color:var(--danger); }
-@media(max-width:900px){ .playoff-grid { grid-template-columns:1fr; } }
-@media(max-width:520px){ .seed-list { grid-template-columns:1fr; } }
-
-@media (max-width:760px) {
-  .stats { grid-template-columns:repeat(2,1fr); }
-  .group-grid, .points-grid { grid-template-columns:1fr; }
-  main { padding:18px 13px 45px; }
-  .topbar { padding:19px 15px; }
-  h1 { font-size:23px; }
-  .form-grid { grid-template-columns:1fr; }
-  .form-item.full { grid-column:auto; }
-}
-
-
-/* ---------- Mobile and responsive image fixes ---------- */
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.brand,
-.brandline {
-  min-width: 0;
-}
-
-.brand > div:first-child {
-  flex: 0 0 180px;
-  min-width: 0;
-}
-
-.brand > div:first-child img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: 120px;
-  object-fit: contain;
-}
-
-.group-card,
-.points-card,
-.stat,
-.table-wrap {
-  min-width: 0;
-}
-
-.table-wrap {
-  max-width: 100%;
-  -webkit-overflow-scrolling: touch;
-}
-
-@media (max-width: 760px) {
-  .brandline {
-    align-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .brand {
-    width: 100%;
-    gap: 10px;
-  }
-
-  .brand > div:first-child {
-    flex: 0 0 105px !important;
-    width: 105px !important;
-    max-width: 105px !important;
-    height: 78px !important;
-    margin: 0 !important;
-  }
-
-  .brand > div:first-child img {
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: contain;
-  }
-
-  .brand > div:last-child {
-    flex: 1 1 0;
-    min-width: 0;
-  }
-
-  h1 {
-    overflow-wrap: anywhere;
-    font-size: clamp(18px, 5vw, 23px);
-  }
-
-  .top-actions {
-    width: 100%;
-  }
-
-  .top-actions button {
-    flex: 1 1 auto;
-  }
-
-  .hero-strip {
-    gap: 7px;
-  }
-
-  .pill {
-    font-size: 11px;
-  }
-
-  .controls {
-    width: 100%;
-  }
-
-  .controls .control {
-    flex: 1 1 100%;
-    width: 100%;
-    min-width: 0;
-  }
-
-  .team-select-card select {
-    width: 100%;
-    min-width: 0;
-  }
-
-  .points-card .table-wrap {
-    overflow-x: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  main {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .brand > div:first-child {
-    flex-basis: 82px !important;
-    width: 82px !important;
-    max-width: 82px !important;
-    height: 68px !important;
-  }
-
-  .eyebrow {
-    font-size: 9px;
-    letter-spacing: 1px;
-  }
-
-  h1 {
-    font-size: 18px;
-    letter-spacing: -0.4px;
-  }
-
-  .stats {
-    gap: 8px;
-  }
-
-  .stat {
-    padding: 12px;
-  }
-
-  .stat-value {
-    font-size: 23px;
-  }
-
-  .tab {
-    padding: 11px 12px;
-    font-size: 12px;
-  }
-
-  .group-title {
-    gap: 8px;
-    padding: 12px;
-  }
-
-  .group-title span {
-    text-align: right;
-  }
-
-  .team-row {
-    padding: 11px;
-  }
-
-  .modal {
-    padding: 16px;
-  }
-
-  footer {
-    padding-left: 12px !important;
-    padding-right: 12px !important;
-    overflow-wrap: anywhere;
-  }
-}
-
-</style>
-</head>
-<body>
-<div id="app">
-  <header class="topbar">
-    <div class="brandline">
-      <div class="brand">
-        <div style="width:100%; max-width:180px; height:120px; display:flex; align-items:center; justify-content:center; margin:0 auto;">
-          <img 
-        src="Images/logo.jpg"
-        alt="UNO Tournament Logo"
-        style="width:100%; height:100%; max-width:100%; object-fit:contain; display:block;"
-            >
-        </div>
-        <div><div class="eyebrow">Tournament match center · 2026</div><h1>BFR SUPERMACY LEAGUE</h1></div>
-      </div>
-      <div class="top-actions">
-        <button id="exportBtn">Export CSV ↓</button>
-      </div>
-    </div>
-    <div class="hero-strip">
-      <span class="pill">📅 <b>01–08 NOV</b> 2026</span>
-      <span class="pill">👥 <b>18</b> TEAMS</span>
-      <span class="pill">🏁 <b>3</b> GROUPS</span>
-      <span class="pill">🕖 <b>7 / 8 / 9 PM</b> IST</span>
-    </div>
-  </header>
-  <main>
-    <section class="stats">
-      <div class="stat"><div class="stat-label">Total teams</div><div class="stat-value" id="statTeams">18</div><div class="stat-note">Across three groups</div></div>
-      <div class="stat"><div class="stat-label">Group matches</div><div class="stat-value" id="statMatches">45</div><div class="stat-note">15 matches per group</div></div>
-      <div class="stat"><div class="stat-label">Completed</div><div class="stat-value" id="statDone">0</div><div class="stat-note">Results are updated in the website code</div></div>
-      <div class="stat"><div class="stat-label">Upcoming</div><div class="stat-value" id="statUpcoming">45</div><div class="stat-note">PDF schedule fixtures</div></div>
-    </section>
-
-    <nav class="tabs">
-      <button class="tab active" data-tab="overview">Overview</button>
-      <button class="tab" data-tab="fixtures">All fixtures</button>
-      <button class="tab" data-tab="teams">Individual team schedule</button>
-      <button class="tab" data-tab="points">Points tables</button>
-      <button class="tab" data-tab="playoffs">🏆 Playoffs</button>
-    </nav>
-
-    <section class="panel active" id="overview">
-      <div class="section-head"><div><h2>Team groups</h2><p>Six teams in each group. Select a team to see its individual fixtures.</p></div></div>
-      <div class="group-grid" id="groupGrid"></div>
-      <div class="footer-note">Match dates and times are shown in India Standard Time (IST).</div>
-    </section>
-
-    <section class="panel" id="fixtures">
-      <div class="section-head"><div><h2>Complete match fixtures</h2><p>View and filter all scheduled matches.</p></div>
-        <div class="controls">
-          <input class="control" id="fixtureSearch" placeholder="Search team..." aria-label="Search team">
-          <select class="control" id="groupFilter"><option value="all">All groups</option><option>A</option><option>B</option><option>C</option></select>
-          <select class="control" id="statusFilter"><option value="all">All statuses</option><option>Upcoming</option><option>Live</option><option>Completed</option></select>
+          <select class="control" id="statusFilter">
+            <option value="all">All statuses</option>
+            <option value="Upcoming">Upcoming</option>
+            <option value="Live">Live</option>
+            <option value="Completed">Completed</option>
+          </select>
         </div>
       </div>
       <div class="table-wrap"><table><thead><tr id="fixtureHead"><th>Date / Day</th><th>Time</th><th>Group</th><th>Match</th><th>Status</th><th>Winner</th></tr></thead><tbody id="fixtureRows"></tbody></table></div>
@@ -765,7 +493,7 @@ img {
     <section class="panel" id="points">
       <div class="section-head"><div><h2>Group points tables</h2><p>Separate standings for Groups A, B and C. Updated whenever the website code is updated.</p></div></div>
       <div class="points-grid" id="pointsGrid"></div>
-      <p class="points-help"><strong>NCD:</strong> (Opponent card points − Own card points) ÷ Total rounds. <strong>Win points:</strong> Set in the match data below and awarded separately to the selected winner. These two point types are displayed separately and are never added together.</p>
+      <p class="points-help"><strong>NCD:</strong> (Total opponent cards − Total own cards) ÷ Total rounds. <strong>Win points:</strong> Set in the match data below and awarded separately to the selected winner. These two point types are displayed separately and are never added together.</p>
     </section>
 
     <section class="panel" id="playoffs">
@@ -795,7 +523,7 @@ img {
             <li><strong>Top 8 teams</strong> advance to the Quarterfinals (Seeds #1 through #8).</li>
             <li>The <strong>#9 ranked team is ELIMINATED.</strong></li>
           </ul>
-          <div class="ncd-reminder"><strong>⚠️ NCD Formula Reminder</strong><br>NCD = (Opponent Card Points − Own Card Points) ÷ Total Rounds<br><span>Keep your remaining card penalty as low as possible in every round — every single card counts!</span></div>
+          <div class="ncd-reminder"><strong>⚠️ NCD Formula Reminder</strong><br>NCD = (Total opponent cards − Total own cards) ÷ Total rounds<br><span>Keep your remaining card penalty as low as possible in every round — every single card counts!</span></div>
         </div>
 
         <div class="playoff-rule-block">
@@ -815,7 +543,7 @@ img {
       <h3 class="playoff-section-title">1. Group-wise qualifiers</h3>
       <div class="playoff-grid" id="groupQualifiers"></div>
       <h3 class="playoff-section-title">2. Combined 9-team elimination leaderboard</h3>
-      <div class="playoff-info">The nine group qualifiers are ranked together. Seeds <strong>#1–#8</strong> advance to the quarterfinals; seed <strong>#9</strong> is eliminated. NCD = (Opponent Card Points − Own Card Points) ÷ Total Rounds.</div>
+      <div class="playoff-info">The nine group qualifiers are ranked together. Seeds <strong>#1–#8</strong> advance to the quarterfinals; seed <strong>#9</strong> is eliminated. NCD = (Total opponent cards − Total own cards) ÷ Total rounds.</div>
       <div class="table-wrap"><table style="min-width:680px"><thead><tr><th>Seed</th><th>Team</th><th>Group</th><th>Win Points</th><th>NCD</th><th>H2H Wins</th><th>Status</th></tr></thead><tbody id="playoffLeaderboard"></tbody></table></div>
       <div id="eliminatedTeam"></div>
       <h3 class="playoff-section-title">3. Quarterfinal pairings</h3>
@@ -897,10 +625,10 @@ img {
 // 4) rounds: total rounds played (must be greater than 0 for NCD calculation).
 // 5) winPoints: points awarded to the winner (example: 3). This is NOT card points.
 // Example: Team 1 wins -> winner:"Three Fire", score1:25, score2:15, rounds:5, winPoints:3.
-// NCD for Team 1 = (score2 - score1) / rounds; Team 2 gets the opposite value.
+// Match NCD for Team 1 = (opponent cards - own cards) / rounds; Team 2 gets the opposite value.
 // Ranking: Win Points first, then NCD as tie-breaker. Never add NCD to Win Points.
 // All fixtures below include editable result fields, even while they are Upcoming.
-const INITIAL = {"groups":{"A":[{"name":"Three Fire","captain":"Nila"},{"name":"YS UNO3 Dragon","captain":"Sam"},{"name":"Broken Guys","captain":"Nikitha"},{"name":"UNO Power House","captain":"Royal King"},{"name":"Star Bucks","captain":"Vincent"},{"name":"UNO Warriors","captain":"Master the Blaster"}],"B":[{"name":"Triple Idot","captain":"Gaara"},{"name":"Mutta Pufffs","captain":"Foden"},{"name":"Team Haters","captain":"HN"},{"name":"Nangalum Player Dhan","captain":"Zehra"},{"name":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain":"Natpea Thunai"},{"name":"Error404","captain":"Escobar"}],"C":[{"name":"Vantha Vettuvom","captain":"Ronaldo"},{"name":"The Celestial Wizards","captain":"Joe"},{"name":"Yaruda Andha Moonu Peru","captain":"Siri"},{"name":"KFC","captain":"Shreyas"},{"name":"Team Jokers","captain":"Mustafa"},{"name":"TP Terri Tory","captain":"Writer"}]},"matches":[{"id":"PDF01","date":"02 Nov 2026","day":"Day 1","time":"7:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"YS UNO3 Dragon","captain2":"Sam","status":"Completed","winner":"YS UNO3 Dragon","score1":24,"score2":3,"rounds":2,"winPoints":5,"notes":"Postponed Match"},{"id":"PDF02","date":"01 Nov 2026","day":"Day 1","time":"7:00 PM","group":"B","team1":"Triple Idot","captain1":"Gaara","team2":"Mutta Pufffs","captain2":"Foden","status":"Completed","winner":"Mutta Pufffs","score1":4,"score2":2,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF03","date":"01 Nov 2026","day":"Day 1","time":"8:00 PM","group":"A","team1":"Broken Guys","captain1":"Nikitha","team2":"UNO Power House","captain2":"Royal King","status":"Completed","winner":"UNO Power House","score1":21,"score2":3,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF04","date":"01 Nov 2026","day":"Day 1","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"The Celestial Wizards","captain2":"Joe","status":"Completed","winner":"The Celestial Wizards","score1":0,"score2":0,"rounds":0,"winPoints":3,"notes":"Winning Declare"},{"id":"PDF05","date":"01 Nov 2026","day":"Day 1","time":"9:00 PM","group":"B","team1":"Team Haters","captain1":"HN","team2":"Nangalum Player Dhan","captain2":"Zehra","status":"Completed","winner":"Team Haters","score1":4,"score2":13,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF06","date":"01 Nov 2026","day":"Day 1","time":"9:00 PM","group":"C","team1":"Yaruda Andha Moonu Peru","captain1":"Siri","team2":"KFC","captain2":"Shreyas","status":"Completed","winner":"Yaruda Andha Moonu Peru","score1":5,"score2":5,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF07","date":"02 Nov 2026","day":"Day 2","time":"9:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"Broken Guys","captain2":"Nikitha","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF08","date":"02 Nov 2026","day":"Day 2","time":"9:00 PM","group":"B","team1":"Triple Idot","captain1":"Gaara","team2":"Team Haters","captain2":"HN","status":"Completed","winner":"Triple Idot","score1":2,"score2":13,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF09","date":"04 Nov 2026","day":"Day 2","time":"7:00 PM","group":"A","team1":"UNO Power House","captain1":"Royal King","team2":"Star Bucks","captain2":"Vincent","status":"Completed","winner":"UNO Power House","score1":8,"score2":6,"rounds":3,"winPoints":3,"notes":"Postponed Match"},{"id":"PDF10","date":"02 Nov 2026","day":"Day 2","time":"8:00 PM","group":"C","team1":"The Celestial Wizards","captain1":"Joe","team2":"Team Jokers","captain2":"Mustafa","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF11","date":"02 Nov 2026","day":"Day 2","time":"8:00 PM","group":"B","team1":"Nangalum Player Dhan","captain1":"Zehra","team2":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain2":"Natpea Thunai","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF12","date":"02 Nov 2026","day":"Day 2","time":"7:00 PM","group":"C","team1":"KFC","captain1":"Shreyas","team2":"TP Terri Tory","captain2":"Writer","status":"Completed","winner":"TP Terri Tory","score1":0,"score2":0,"rounds":0,"winPoints":3,"notes":""},{"id":"PDF13","date":"03 Nov 2026","day":"Day 3","time":"7:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"UNO Power House","captain2":"Royal King","status":"Completed","winner":"Three Fire","score1":9,"score2":5,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF14","date":"03 Nov 2026","day":"Day 3","time":"8:00 PM","group":"B","team1":"Triple Idot","captain1":"Gaara","team2":"Nangalum Player Dhan","captain2":"Zehra","status":"Completed","winner":"Nangalum Player Dhan","score1":8,"score2":3,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF15","date":"03 Nov 2026","day":"Day 3","time":"7:00 PM","group":"C","team1":"Team Jokers","captain1":"Mustafa","team2":"TP Terri Tory","captain2":"Writer","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF16","date":"03 Nov 2026","day":"Day 3","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"Yaruda Andha Moonu Peru","captain2":"Siri","status":"Completed","winner":"Yaruda Andha Moonu Peru","score1":9,"score2":1,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF17","date":"03 Nov 2026","day":"Day 3","time":"8:00 PM","group":"B","team1":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain1":"Natpea Thunai","team2":"Error404","captain2":"Escobar","status":"Completed","winner":"Error404","score1":11,"score2":9,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF18","date":"03 Nov 2026","day":"Day 3","time":"9:00 PM","group":"A","team1":"Star Bucks","captain1":"Vincent","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Completed","winner":"UNO Warriors","score1":5,"score2":12,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF19","date":"04 Nov 2026","day":"Day 4","time":"7:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"Star Bucks","captain2":"Vincent","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF20","date":"04 Nov 2026","day":"Day 4","time":"9:00 PM","group":"B","team1":"Triple Idot","captain1":"Gaara","team2":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain2":"Natpea Thunai","status":"Completed","winner":"Triple Idot","score1":6,"score2":11,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF21","date":"04 Nov 2026","day":"Day 4","time":"8:00 PM","group":"A","team1":"YS UNO3 Dragon","captain1":"Sam","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Completed","winner":"YS UNO3 Dragon","score1":9,"score2":22,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF22","date":"04 Nov 2026","day":"Day 4","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"KFC","captain2":"Shreyas","status":"Completed","winner":"Vantha Vettuvom","score1":0,"score2":0,"rounds":0,"winPoints":3,"notes":""},{"id":"PDF23","date":"04 Nov 2026","day":"Day 4","time":"9:00 PM","group":"B","team1":"Mutta Pufffs","captain1":"Foden","team2":"Error404","captain2":"Escobar","status":"Completed","winner":"Mutta Pufffs","score1":1,"score2":4,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF24","date":"04 Nov 2026","day":"Day 4","time":"7:00 PM","group":"C","team1":"The Celestial Wizards","captain1":"Joe","team2":"TP Terri Tory","captain2":"Writer","status":"Completed","winner":"The Celestial Wizards","score1":1,"score2":22,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF25","date":"05 Nov 2026","day":"Day 5","time":"7:00 PM","group":"B","team1":"Mutta Pufffs","captain1":"Foden","team2":"Nangalum Player Dhan","captain2":"Zehra","status":"Completed","winner":"Nangalum Player Dhan","score1":15,"score2":2,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF26","date":"05 Nov 2026","day":"Day 5","time":"7:00 PM","group":"B","team1":"Triple Idot","captain1":"Gaara","team2":"Error404","captain2":"Escobar","status":"Completed","winner":"Triple Idot","score1":5,"score2":25,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF27","date":"05 Nov 2026","day":"Day 5","time":"8:00 PM","group":"A","team1":"Broken Guys","captain1":"Nikitha","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Completed","winner":"Broken Guys","score1":11,"score2":13,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF28","date":"05 Nov 2026","day":"Day 5","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"Team Jokers","captain2":"Mustafa","status":"Completed","winner":"Vantha Vettuvom","score1":5,"score2":5,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF29","date":"05 Nov 2026","day":"Day 5","time":"9:00 PM","group":"B","team1":"Team Haters","captain1":"HN","team2":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain2":"Natpea Thunai","status":"Completed","winner":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","score1":12,"score2":2,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF30","date":"05 Nov 2026","day":"Day 5","time":"9:00 PM","group":"C","team1":"Yaruda Andha Moonu Peru","captain1":"Siri","team2":"TP Terri Tory","captain2":"Shreyas","status":"Completed","winner":"Yaruda Andha Moonu Peru","score1":0,"score2":0,"rounds":0,"winPoints":3,"notes":""},{"id":"PDF31","date":"06 Nov 2026","day":"Day 6","time":"7:00 PM","group":"A","team1":"YS UNO3 Dragon","captain1":"Sam","team2":"Broken Guys","captain2":"Nikitha","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF32","date":"06 Nov 2026","day":"Day 6","time":"7:00 PM","group":"B","team1":"Mutta Pufffs","captain1":"Foden","team2":"Team Haters","captain2":"HN","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF33","date":"06 Nov 2026","day":"Day 6","time":"8:00 PM","group":"B","team1":"Nangalum Player Dhan","captain1":"Zehra","team2":"Error404","captain2":"Escobar","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF34","date":"06 Nov 2026","day":"Day 6","time":"8:00 PM","group":"C","team1":"The Celestial Wizards","captain1":"Joe","team2":"KFC","captain2":"Shreyas","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF35","date":"06 Nov 2026","day":"Day 6","time":"9:00 PM","group":"A","team1":"UNO Power House","captain1":"Royal King","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF36","date":"06 Nov 2026","day":"Day 6","time":"9:00 PM","group":"C","team1":"Yaruda Andha Moonu Peru","captain1":"Siri","team2":"Team Jokers","captain2":"Mustafa","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF37","date":"07 Nov 2026","day":"Day 7","time":"7:00 PM","group":"A","team1":"YS UNO3 Dragon","captain1":"Sam","team2":"Star Bucks","captain2":"Vincent","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF38","date":"07 Nov 2026","day":"Day 7","time":"7:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF39","date":"07 Nov 2026","day":"Day 7","time":"8:00 PM","group":"A","team1":"Broken Guys","captain1":"Nikitha","team2":"Star Bucks","captain2":"Vincent","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF40","date":"07 Nov 2026","day":"Day 7","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"TP Terri Tory","captain2":"Writer","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF41","date":"07 Nov 2026","day":"Day 7","time":"9:00 PM","group":"B","team1":"Team Haters","captain1":"HN","team2":"Error404","captain2":"Escobar","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF42","date":"07 Nov 2026","day":"Day 7","time":"9:00 PM","group":"C","team1":"The Celestial Wizards","captain1":"Joe","team2":"Yaruda Andha Moonu Peru","captain2":"Siri","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF43","date":"08 Nov 2026","day":"Day 8","time":"7:00 PM","group":"A","team1":"YS UNO3 Dragon","captain1":"Sam","team2":"UNO Power House","captain2":"Royal King","status":"Completed","winner":"YS UNO3 Dragon","score1":2,"score2":20,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF44","date":"08 Nov 2026","day":"Day 8","time":"7:00 PM","group":"B","team1":"Mutta Pufffs","captain1":"Foden","team2":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain2":"Natpea Thunai","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF45","date":"08 Nov 2026","day":"Day 8","time":"8:00 PM","group":"C","team1":"KFC","captain1":"Shreyas","team2":"Team Jokers","captain2":"Mustafa","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""}]};
+const INITIAL = {"groups":{"A":[{"name":"Three Fire","captain":"Nila"},{"name":"YS UNO3 Dragon","captain":"Sam"},{"name":"Broken Guys","captain":"Nikitha"},{"name":"UNO Power House","captain":"Royal King"},{"name":"Star Bucks","captain":"Vincent"},{"name":"UNO Warriors","captain":"Master the Blaster"}],"B":[{"name":"Triple Idiot","captain":"Gaara"},{"name":"Mutta Pufffs","captain":"Foden"},{"name":"Team Haters","captain":"HN"},{"name":"Nangalum Player Dhan","captain":"Zehra"},{"name":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain":"Natpea Thunai"},{"name":"Error404","captain":"Escobar"}],"C":[{"name":"Vantha Vettuvom","captain":"Ronaldo"},{"name":"The Celestial Wizards","captain":"Joe"},{"name":"Yaruda Andha Moonu Peru","captain":"Siri"},{"name":"KFC","captain":"Shreyas"},{"name":"Team Jokers","captain":"Mustafa"},{"name":"TP Terri Tory","captain":"Writer"}]},"matches":[{"id":"PDF01","date":"02 Nov 2026","day":"Day 1","time":"7:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"YS UNO3 Dragon","captain2":"Sam","status":"Completed","winner":"YS UNO3 Dragon","score1":24,"score2":3,"rounds":2,"winPoints":5,"notes":"Postponed Match"},{"id":"PDF02","date":"01 Nov 2026","day":"Day 1","time":"7:00 PM","group":"B","team1":"Triple Idiot","captain1":"Gaara","team2":"Mutta Pufffs","captain2":"Foden","status":"Completed","winner":"Mutta Pufffs","score1":4,"score2":2,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF03","date":"01 Nov 2026","day":"Day 1","time":"8:00 PM","group":"A","team1":"Broken Guys","captain1":"Nikitha","team2":"UNO Power House","captain2":"Royal King","status":"Completed","winner":"UNO Power House","score1":21,"score2":3,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF04","date":"01 Nov 2026","day":"Day 1","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"The Celestial Wizards","captain2":"Joe","status":"Completed","winner":"The Celestial Wizards","score1":0,"score2":0,"rounds":0,"winPoints":3,"notes":"Winning Declare"},{"id":"PDF05","date":"01 Nov 2026","day":"Day 1","time":"9:00 PM","group":"B","team1":"Team Haters","captain1":"HN","team2":"Nangalum Player Dhan","captain2":"Zehra","status":"Completed","winner":"Team Haters","score1":4,"score2":13,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF06","date":"01 Nov 2026","day":"Day 1","time":"9:00 PM","group":"C","team1":"Yaruda Andha Moonu Peru","captain1":"Siri","team2":"KFC","captain2":"Shreyas","status":"Completed","winner":"Yaruda Andha Moonu Peru","score1":5,"score2":5,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF07","date":"02 Nov 2026","day":"Day 2","time":"9:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"Broken Guys","captain2":"Nikitha","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF08","date":"02 Nov 2026","day":"Day 2","time":"9:00 PM","group":"B","team1":"Triple Idiot","captain1":"Gaara","team2":"Team Haters","captain2":"HN","status":"Completed","winner":"Triple Idiot","score1":2,"score2":13,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF09","date":"04 Nov 2026","day":"Day 2","time":"7:00 PM","group":"A","team1":"UNO Power House","captain1":"Royal King","team2":"Star Bucks","captain2":"Vincent","status":"Completed","winner":"UNO Power House","score1":8,"score2":6,"rounds":3,"winPoints":3,"notes":"Postponed Match"},{"id":"PDF10","date":"02 Nov 2026","day":"Day 2","time":"8:00 PM","group":"C","team1":"The Celestial Wizards","captain1":"Joe","team2":"Team Jokers","captain2":"Mustafa","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF11","date":"02 Nov 2026","day":"Day 2","time":"8:00 PM","group":"B","team1":"Nangalum Player Dhan","captain1":"Zehra","team2":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain2":"Natpea Thunai","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF12","date":"02 Nov 2026","day":"Day 2","time":"7:00 PM","group":"C","team1":"KFC","captain1":"Shreyas","team2":"TP Terri Tory","captain2":"Writer","status":"Completed","winner":"TP Terri Tory","score1":0,"score2":0,"rounds":0,"winPoints":3,"notes":""},{"id":"PDF13","date":"03 Nov 2026","day":"Day 3","time":"7:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"UNO Power House","captain2":"Royal King","status":"Completed","winner":"Three Fire","score1":9,"score2":5,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF14","date":"03 Nov 2026","day":"Day 3","time":"8:00 PM","group":"B","team1":"Triple Idiot","captain1":"Gaara","team2":"Nangalum Player Dhan","captain2":"Zehra","status":"Completed","winner":"Nangalum Player Dhan","score1":8,"score2":3,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF15","date":"03 Nov 2026","day":"Day 3","time":"7:00 PM","group":"C","team1":"Team Jokers","captain1":"Mustafa","team2":"TP Terri Tory","captain2":"Writer","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF16","date":"03 Nov 2026","day":"Day 3","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"Yaruda Andha Moonu Peru","captain2":"Siri","status":"Completed","winner":"Yaruda Andha Moonu Peru","score1":9,"score2":1,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF17","date":"03 Nov 2026","day":"Day 3","time":"8:00 PM","group":"B","team1":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain1":"Natpea Thunai","team2":"Error404","captain2":"Escobar","status":"Completed","winner":"Error404","score1":11,"score2":9,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF18","date":"03 Nov 2026","day":"Day 3","time":"9:00 PM","group":"A","team1":"Star Bucks","captain1":"Vincent","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Completed","winner":"UNO Warriors","score1":5,"score2":12,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF19","date":"04 Nov 2026","day":"Day 4","time":"7:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"Star Bucks","captain2":"Vincent","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF20","date":"04 Nov 2026","day":"Day 4","time":"9:00 PM","group":"B","team1":"Triple Idiot","captain1":"Gaara","team2":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain2":"Natpea Thunai","status":"Completed","winner":"Triple Idiot","score1":6,"score2":11,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF21","date":"04 Nov 2026","day":"Day 4","time":"8:00 PM","group":"A","team1":"YS UNO3 Dragon","captain1":"Sam","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Completed","winner":"YS UNO3 Dragon","score1":9,"score2":22,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF22","date":"04 Nov 2026","day":"Day 4","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"KFC","captain2":"Shreyas","status":"Completed","winner":"Vantha Vettuvom","score1":0,"score2":0,"rounds":0,"winPoints":3,"notes":""},{"id":"PDF23","date":"04 Nov 2026","day":"Day 4","time":"9:00 PM","group":"B","team1":"Mutta Pufffs","captain1":"Foden","team2":"Error404","captain2":"Escobar","status":"Completed","winner":"Mutta Pufffs","score1":1,"score2":4,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF24","date":"04 Nov 2026","day":"Day 4","time":"7:00 PM","group":"C","team1":"The Celestial Wizards","captain1":"Joe","team2":"TP Terri Tory","captain2":"Writer","status":"Completed","winner":"The Celestial Wizards","score1":1,"score2":22,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF25","date":"05 Nov 2026","day":"Day 5","time":"7:00 PM","group":"B","team1":"Mutta Pufffs","captain1":"Foden","team2":"Nangalum Player Dhan","captain2":"Zehra","status":"Completed","winner":"Nangalum Player Dhan","score1":15,"score2":2,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF26","date":"05 Nov 2026","day":"Day 5","time":"7:00 PM","group":"B","team1":"Triple Idiot","captain1":"Gaara","team2":"Error404","captain2":"Escobar","status":"Completed","winner":"Triple Idiot","score1":5,"score2":25,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF27","date":"05 Nov 2026","day":"Day 5","time":"8:00 PM","group":"A","team1":"Broken Guys","captain1":"Nikitha","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Completed","winner":"Broken Guys","score1":11,"score2":13,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF28","date":"05 Nov 2026","day":"Day 5","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"Team Jokers","captain2":"Mustafa","status":"Completed","winner":"Vantha Vettuvom","score1":5,"score2":5,"rounds":3,"winPoints":3,"notes":""},{"id":"PDF29","date":"05 Nov 2026","day":"Day 5","time":"9:00 PM","group":"B","team1":"Team Haters","captain1":"HN","team2":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain2":"Natpea Thunai","status":"Completed","winner":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","score1":12,"score2":2,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF30","date":"05 Nov 2026","day":"Day 5","time":"9:00 PM","group":"C","team1":"Yaruda Andha Moonu Peru","captain1":"Siri","team2":"TP Terri Tory","captain2":"Shreyas","status":"Completed","winner":"Yaruda Andha Moonu Peru","score1":0,"score2":0,"rounds":0,"winPoints":3,"notes":""},{"id":"PDF31","date":"06 Nov 2026","day":"Day 6","time":"7:00 PM","group":"A","team1":"YS UNO3 Dragon","captain1":"Sam","team2":"Broken Guys","captain2":"Nikitha","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF32","date":"06 Nov 2026","day":"Day 6","time":"7:00 PM","group":"B","team1":"Mutta Pufffs","captain1":"Foden","team2":"Team Haters","captain2":"HN","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF33","date":"06 Nov 2026","day":"Day 6","time":"8:00 PM","group":"B","team1":"Nangalum Player Dhan","captain1":"Zehra","team2":"Error404","captain2":"Escobar","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF34","date":"06 Nov 2026","day":"Day 6","time":"8:00 PM","group":"C","team1":"The Celestial Wizards","captain1":"Joe","team2":"KFC","captain2":"Shreyas","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF35","date":"06 Nov 2026","day":"Day 6","time":"9:00 PM","group":"A","team1":"UNO Power House","captain1":"Royal King","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF36","date":"06 Nov 2026","day":"Day 6","time":"9:00 PM","group":"C","team1":"Yaruda Andha Moonu Peru","captain1":"Siri","team2":"Team Jokers","captain2":"Mustafa","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF37","date":"07 Nov 2026","day":"Day 7","time":"7:00 PM","group":"A","team1":"YS UNO3 Dragon","captain1":"Sam","team2":"Star Bucks","captain2":"Vincent","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF38","date":"07 Nov 2026","day":"Day 7","time":"7:00 PM","group":"A","team1":"Three Fire","captain1":"Nila","team2":"UNO Warriors","captain2":"Master the Blaster","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF39","date":"07 Nov 2026","day":"Day 7","time":"8:00 PM","group":"A","team1":"Broken Guys","captain1":"Nikitha","team2":"Star Bucks","captain2":"Vincent","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF40","date":"07 Nov 2026","day":"Day 7","time":"8:00 PM","group":"C","team1":"Vantha Vettuvom","captain1":"Ronaldo","team2":"TP Terri Tory","captain2":"Writer","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF41","date":"07 Nov 2026","day":"Day 7","time":"9:00 PM","group":"B","team1":"Team Haters","captain1":"HN","team2":"Error404","captain2":"Escobar","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF42","date":"07 Nov 2026","day":"Day 7","time":"9:00 PM","group":"C","team1":"The Celestial Wizards","captain1":"Joe","team2":"Yaruda Andha Moonu Peru","captain2":"Siri","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF43","date":"08 Nov 2026","day":"Day 8","time":"7:00 PM","group":"A","team1":"YS UNO3 Dragon","captain1":"Sam","team2":"UNO Power House","captain2":"Royal King","status":"Completed","winner":"YS UNO3 Dragon","score1":2,"score2":20,"rounds":2,"winPoints":5,"notes":""},{"id":"PDF44","date":"08 Nov 2026","day":"Day 8","time":"7:00 PM","group":"B","team1":"Mutta Pufffs","captain1":"Foden","team2":"Chiththappu Chikkunnu Chikkunnu Vaaraleyy","captain2":"Natpea Thunai","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""},{"id":"PDF45","date":"08 Nov 2026","day":"Day 8","time":"8:00 PM","group":"C","team1":"KFC","captain1":"Shreyas","team2":"Team Jokers","captain2":"Mustafa","status":"Upcoming","winner":"","score1":null,"score2":null,"rounds":null,"winPoints":0,"notes":""}]};
 // CODE-ONLY VERSION: edit the INITIAL data below, then upload this HTML file to GitHub.
 // All visitors see the same published data after the updated file is deployed.
 // No Firebase, login, localStorage, or browser-side editing is used.
@@ -981,39 +709,72 @@ function sortMatches(a,b) {
   return parseDate(a.date)-parseDate(b.date) || (timeRank[a.time]??0)-(timeRank[b.time]??0);
 }
 function getGroupStandings(group) {
-  const rows = state.groups[group].map(team => ({name:team.name, played:0, won:0, lost:0, ncd:0, winPoints:0}));
+  const rows = state.groups[group].map(team => ({
+    name: team.name,
+    played: 0,
+    won: 0,
+    lost: 0,
+    ncd: 0,
+    winPoints: 0,
+    totalCardDifferential: 0,
+    totalRounds: 0
+  }));
   const byName = new Map(rows.map(r => [r.name, r]));
-  state.matches.filter(m => m.group===group && m.status==="Completed").forEach(m => {
-    const a=byName.get(m.team1), b=byName.get(m.team2);
-    if(!a || !b) return;
-    a.played++; b.played++;
-    if(m.winner===m.team1){a.won++;b.lost++;}
-    else if(m.winner===m.team2){b.won++;a.lost++;}
 
-    // NCD is calculated independently for each team.
-    const s1=Number(m.score1), s2=Number(m.score2), rounds=Number(m.rounds);
-    if(m.score1!==undefined && m.score1!=="" && m.score2!==undefined && m.score2!=="" && Number.isFinite(s1) && Number.isFinite(s2) && Number.isFinite(rounds) && rounds>0){
-      a.ncd+=(s2-s1)/rounds;
-      b.ncd+=(s1-s2)/rounds;
+  state.matches.filter(m => m.group === group && m.status === "Completed").forEach(m => {
+    const a = byName.get(m.team1);
+    const b = byName.get(m.team2);
+    if (!a || !b) return;
+
+    a.played++;
+    b.played++;
+    if (m.winner === m.team1) {
+      a.won++;
+      b.lost++;
+    } else if (m.winner === m.team2) {
+      b.won++;
+      a.lost++;
     }
 
-    // Manually entered winner points are tracked in their own column; never added to card points.
-    const manualWinPoints=Number(m.winPoints||0);
-    if(Number.isFinite(manualWinPoints) && manualWinPoints>0){
-      if(m.winner===m.team1) a.winPoints+=manualWinPoints;
-      else if(m.winner===m.team2) b.winPoints+=manualWinPoints;
+    // Aggregate card differential and rounds first, then calculate one NCD per team.
+    const s1 = Number(m.score1);
+    const s2 = Number(m.score2);
+    const rounds = Number(m.rounds);
+    const hasScores = m.score1 !== null && m.score1 !== undefined && m.score1 !== "" &&
+      m.score2 !== null && m.score2 !== undefined && m.score2 !== "" &&
+      Number.isFinite(s1) && Number.isFinite(s2);
+
+    if (hasScores && Number.isFinite(rounds) && rounds > 0) {
+      a.totalCardDifferential += (s2 - s1);
+      b.totalCardDifferential += (s1 - s2);
+      a.totalRounds += rounds;
+      b.totalRounds += rounds;
+    }
+
+    // Manually entered winner points are separate from NCD and card scores.
+    const manualWinPoints = Number(m.winPoints || 0);
+    if (Number.isFinite(manualWinPoints) && manualWinPoints > 0) {
+      if (m.winner === m.team1) a.winPoints += manualWinPoints;
+      else if (m.winner === m.team2) b.winPoints += manualWinPoints;
     }
   });
-  rows.forEach(r=>{r.ncd=Number(r.ncd.toFixed(3));r.winPoints=Number(r.winPoints.toFixed(3));});
-  // Rank by Win Points, then NCD, then direct head-to-head result.
-  return rows.sort((a,b)=>{
-    const pointsDiff=b.winPoints-a.winPoints;
-    if(pointsDiff) return pointsDiff;
-    const ncdDiff=b.ncd-a.ncd;
-    if(ncdDiff) return ncdDiff;
-    const h2hDiff=headToHeadWins(b.name,a.name,group)-headToHeadWins(a.name,b.name,group);
-    if(h2hDiff) return h2hDiff;
-    return b.won-a.won || a.name.localeCompare(b.name);
+
+  rows.forEach(r => {
+    r.ncd = r.totalRounds > 0
+      ? Number((r.totalCardDifferential / r.totalRounds).toFixed(3))
+      : 0;
+    r.winPoints = Number(r.winPoints.toFixed(3));
+  });
+
+  // Ranking: Win Points first, then NCD, then direct head-to-head result.
+  return rows.sort((a, b) => {
+    const pointsDiff = b.winPoints - a.winPoints;
+    if (pointsDiff) return pointsDiff;
+    const ncdDiff = b.ncd - a.ncd;
+    if (ncdDiff) return ncdDiff;
+    const h2hDiff = headToHeadWins(b.name, a.name, group) - headToHeadWins(a.name, b.name, group);
+    if (h2hDiff) return h2hDiff;
+    return b.won - a.won || a.name.localeCompare(b.name);
   });
 }
 function renderPointsTables() {
@@ -1033,6 +794,9 @@ function h2hWinsAmong(teamName, teamNames) {
   return teamNames.reduce((total, other) => total + (other === teamName ? 0 : headToHeadWins(teamName, other)), 0);
 }
 // UPDATE PLAYOFF RESULTS HERE after each knockout match is played.
+// QF winners automatically appear in the correct semifinal:
+// SF 1 = Winner QF 1 vs Winner QF 2; SF 2 = Winner QF 3 vs Winner QF 4.
+// The two semifinal winners automatically appear in the Grand Final.
 // Enter the exact team name as written in the tournament team list.
 // Leave a value as an empty string until that match has a winner.
 const playoffResults = {
